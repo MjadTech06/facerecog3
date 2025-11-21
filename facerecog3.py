@@ -1,3 +1,17 @@
+# 📚 Step-by-Step Guide: Building a Touchless Satisfaction Survey App in your github
+
+# -*- coding: utf-8 -*-
+# ============================================================================
+# TOUCHLESS SATISFACTION SURVEY - ENHANCED EDUCATIONAL VERSION
+# Features:
+# - Admin panel with password (no default message shown to respondents)
+# - Multiple data cleaning strategies with educational notes
+# - Multiple statistical methods with explanations
+# - Multiple ML models with learning descriptions
+# - Built-in SQLite database
+# - Teachable Machine integration
+# ============================================================================
+
 import streamlit as st
 import pandas as pd
 import numpy as np
