@@ -42,3 +42,39 @@ try:
     ML_AVAILABLE = True
 except:
     ML_AVAILABLE = False
+
+
+# ============================================================================
+# CONFIGURATION
+# ============================================================================
+
+st.set_page_config(
+    page_title="Touchless Survey System",
+    page_icon="✋",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# Default admin password (NOT shown to users)
+DEFAULT_ADMIN_PASSWORD = "admin123"
+
+# Database file
+DB_FILE = "survey_responses.db"
+
+# Survey questions
+SURVEY_QUESTIONS = [
+    "How satisfied are you with the workshop content?",
+    "How satisfied are you with the instructor's teaching?",
+    "How satisfied are you with the workshop materials?",
+    "How satisfied are you with the hands-on activities?",
+    "How satisfied are you with the overall workshop experience?"
+]
+
+# Gesture mapping
+GESTURE_MAP = {
+    'thumbs_up': {'label': 'Satisfied', 'score': 4, 'emoji': '👍'},
+    'heart_sign': {'label': 'Very Satisfied', 'score': 5, 'emoji': '❤️'},
+    'thumbs_down': {'label': 'Unsatisfied', 'score': 2, 'emoji': '👎'},
+    'waving_finger': {'label': 'Very Unsatisfied', 'score': 1, 'emoji': '☝️'},
+    'closed_fist': {'label': 'No Answer', 'score': None, 'emoji': '✊'}
+}
